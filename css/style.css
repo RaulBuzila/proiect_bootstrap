@@ -1,0 +1,38 @@
+.content .navbar #logo {
+  width: 70px;
+  height: 50px;
+  margin: 33px 81px 30px 30px;
+}
+.content .navbar header li {
+  margin-top: 5%;
+}
+.content .navbar header img {
+  width: 24px;
+  height: 24px;
+}
+.content .buttons {
+  height: 115px;
+}
+.content .buttons .btn-default {
+  width: 112px;
+  height: 33px;
+  background-color: darkblue;
+  color: white;
+}
+.content .buttons .btn-space {
+  margin-left: 20px;
+}
+.content .tickets {
+  margin: 5%;
+  width: 90%;
+  height: 45px;
+  background-color: orange;
+}
+.content .tickets img {
+  width: 56px;
+  height: 56px;
+}
+.content .tickets span {
+  color: white;
+  font-size: 16px;
+}

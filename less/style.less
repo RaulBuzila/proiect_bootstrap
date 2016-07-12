@@ -1,0 +1,45 @@
+.set-size(@width, @height)
+{
+  width: @width;
+  height: @height;
+}
+.content{
+  .navbar{
+    #logo{
+      .set-size(70px,50px);
+      margin: 33px 81px 30px 30px;
+    }
+    header{
+      li{
+        margin-top: 5%;
+      }
+      img{
+        .set-size(24px, 24px);
+      }
+    }
+  }
+  .buttons{
+    height: 115px;
+    .btn-default{
+      .set-size(112px, 33px);
+      background-color: darkblue;
+      color: white;
+    }
+    .btn-space{
+      margin-left: 20px;
+    }
+  }
+  .tickets{
+    margin: 5%;
+    width: 90%;
+    height: 45px;
+    background-color: orange;
+    img{
+      .set-size(56px, 56px);
+    }
+    span{
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
