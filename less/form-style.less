@@ -1,0 +1,71 @@
+.set-size(@width, @height)
+{
+    width: @width;
+    height: @height;
+}
+.container
+{
+    margin-bottom:200px;
+    /* NAVBAR AND HEADER SETTING */
+    @media (max-width: 991px) {
+        .navbar-header {
+            float: none;
+        }
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+        .navbar-nav {
+            float: none !important;
+            margin: 7.5px -15px;
+        }
+        .navbar-nav > li {
+            float: none;
+        }
+        .navbar-nav > li > a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .navbar-text {
+            float: none;
+            margin: 15px 0;
+        }
+        /* since 3.1.0 */
+        .navbar-collapse.collapse.in {
+            display: block !important;
+        }
+        .collapsing {
+            overflow: hidden !important;
+        }
+    }
+    .navbar {
+        #logo {
+            .set-size(70px, 50px);
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        header {
+            background-color: none;
+            li {
+                margin-top: 5%;
+            }
+            img {
+                .set-size(24px, 24px);
+            }
+            a:hover {
+                color: blue;
+            }
+        }
+    }
+    .btn-default{
+        .set-size(109px, 35px);
+        background-color: orange;
+    }
+}
+
