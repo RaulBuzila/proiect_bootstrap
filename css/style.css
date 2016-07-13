@@ -1,38 +1,159 @@
-.content .navbar #logo {
+.container {
+  /* NAVBAR AND HEADER SETTING */
+}
+@media (max-width: 991px) {
+  .container {
+    /* since 3.1.0 */
+  }
+  .container .navbar-header {
+    float: none;
+  }
+  .container .navbar-toggle {
+    display: block;
+  }
+  .container .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .container .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .container .navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+  }
+  .container .navbar-nav > li {
+    float: none;
+  }
+  .container .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  .container .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+  .container .collapsing {
+    overflow: hidden!important;
+  }
+}
+.container .navbar #logo {
   width: 70px;
   height: 50px;
-  margin: 33px 81px 30px 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.content .navbar header li {
+.container .navbar header {
+  background-color: none;
+}
+.container .navbar header li {
   margin-top: 5%;
 }
-.content .navbar header img {
+.container .navbar header img {
   width: 24px;
   height: 24px;
 }
-.content .buttons {
-  height: 115px;
+.container .navbar header a:hover {
+  color: blue;
 }
-.content .buttons .btn-default {
-  width: 112px;
+/*****************
+ BUTTONS SETTINGS
+ *****************/
+.content {
+  /******************
+  ORANGE LINE
+  ******************/
+  /*****************
+  TABLE PROPERTIES
+  ****************/
+}
+.content .ugly-buttons {
+  height: 75px;
+}
+.content .ugly-buttons .btn-default {
+  width: 100%;
   height: 33px;
-  background-color: darkblue;
+  background-color: #004593;
   color: white;
 }
-.content .buttons .btn-space {
-  margin-left: 20px;
-}
 .content .tickets {
-  margin: 5%;
-  width: 90%;
+  margin-bottom: 1%;
+  width: 100%;
   height: 45px;
   background-color: orange;
 }
 .content .tickets img {
+  margin-top: -5px;
   width: 56px;
   height: 56px;
 }
 .content .tickets span {
-  color: white;
+  color: white!important;
   font-size: 16px;
+}
+.content .tickets .glyphicon {
+  margin-top: 1%;
+  margin-left: 10px;
+}
+.content .tickets #search {
+  margin: 1.5% 0%;
+}
+.content table {
+  margin-bottom: 24px;
+}
+.content table thead {
+  background-color: lightgray;
+  font-weight: bold;
+  color: black;
+}
+.content table tr {
+  color: grey;
+}
+.content table .arrow {
+  margin-left: 5px;
+  margin-top: 3.5px;
+}
+.content .table-hover tr:hover {
+  background: whitesmoke;
+  border: 1px solid orange;
+}
+.content .table th,
+.content .table td {
+  border: none !important;
+}
+.content .table tr {
+  border-top: 1px transparent grey;
+}
+.content .number-list {
+  margin-bottom: 30px;
+}
+.content .number-list li:hover {
+  color: orange;
+}
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+/* align icon */
+.left-addon .glyphicon {
+  left: 0px;
+}
+.right-addon .glyphicon {
+  right: 0px;
+}
+/* add padding  */
+.left-addon input {
+  padding-left: 30px;
+}
+.right-addon input {
+  padding-right: 30px;
 }
