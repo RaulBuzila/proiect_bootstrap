@@ -43,6 +43,8 @@
     }
   }
   .navbar{
+    background-color: transparent;
+    border: none;
     #logo{
       .set-size(70px,50px);
       margin-top: 15px;
@@ -95,7 +97,7 @@
       margin-left: 10px;
     }
     #search{
-      margin: 1.5% 0%;
+      margin: 1.75% 0% 2% 0%;
     }
   }
   /*****************
@@ -116,21 +118,15 @@
      margin-top: 3.5px;
    }
   }
-  .table-hover tr:hover{
+  .table-hover tbody tr:hover{
     background: whitesmoke;
     border: 1px solid orange;
   }
-  .table th, .table td {
+  .table th, .table td{
     border: none !important;
   }
   .table tr{
     border-top: 1px transparent grey;
-  }
-  .number-list{
-    margin-bottom: 30px;
-  }
-  .number-list li:hover{
-    color: orange;
   }
 }
 /* enable absolute positioning */
@@ -152,3 +148,14 @@
 /* add padding  */
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
+
+hr{
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.number-list{
+  margin-bottom: 30px;
+}
+.number-list li:hover{
+  color: orange!important;
+}

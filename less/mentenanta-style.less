@@ -1,0 +1,119 @@
+.set-size(@width, @height)
+{
+  width: @width;
+  height: @height;
+}
+.container {
+  /* NAVBAR AND HEADER SETTING */
+}
+@media (max-width: 991px) {
+  .container {
+    /* since 3.1.0 */
+  }
+  .container .navbar-header {
+    float: none;
+  }
+  .container .navbar-toggle {
+    display: block;
+  }
+  .container .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .container .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .container .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+  .container .navbar-nav > li {
+    float: none;
+  }
+  .container .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  .container .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .container .collapsing {
+    overflow: hidden !important;
+  }
+}
+.container .navbar {
+  background-color: transparent;
+  border: none;
+}
+.container .navbar #logo {
+  width: 70px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.container .navbar header {
+  background-color: none;
+}
+.container .navbar header li {
+  margin-top: 5%;
+}
+.container .navbar header img {
+  width: 24px;
+  height: 24px;
+}
+.container .navbar header a:hover {
+  color: blue;
+}
+.content {
+  width: 50%;
+  margin: 0 auto;
+}
+.content .input-distance {
+  margin-top: 10px;
+}
+.content .form-group {
+  margin-bottom: 30px;
+}
+.content .fa {
+  margin-top: 5px;
+  color: orange;
+}
+.content .btn-default {
+  width: 109px;
+  height: 35px;
+  color: white;
+  background-color: orange;
+}
+.content .line {
+  margin-bottom: 100px;
+}
+.content .customize-date .col-md-6,
+.content .customize-date .col-md-2,
+.content .customize-date .col-md-10,
+.content .customize-date .col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content .up-spacing {
+  margin-top: 10px;
+}
+.content .up-margin.col-sm-12,
+.content .up-margin.col-xs-12 {
+  margin-top: 10px;
+}
+#loading{
+  .set-size(32px,32px);
+}
+#attach{
+  .set-size(200px,35px);
+}
+#save{
+  margin-top:20px;
+  margin-bottom: 45px;
+}
+
+

@@ -40,6 +40,10 @@
     overflow: hidden!important;
   }
 }
+.container .navbar {
+  background-color: transparent;
+  border: none;
+}
 .container .navbar #logo {
   width: 70px;
   height: 50px;
@@ -99,7 +103,7 @@
   margin-left: 10px;
 }
 .content .tickets #search {
-  margin: 1.5% 0%;
+  margin: 1.75% 0% 2% 0%;
 }
 .content table {
   margin-bottom: 24px;
@@ -116,7 +120,7 @@
   margin-left: 5px;
   margin-top: 3.5px;
 }
-.content .table-hover tr:hover {
+.content .table-hover tbody tr:hover {
   background: whitesmoke;
   border: 1px solid orange;
 }
@@ -126,12 +130,6 @@
 }
 .content .table tr {
   border-top: 1px transparent grey;
-}
-.content .number-list {
-  margin-bottom: 30px;
-}
-.content .number-list li:hover {
-  color: orange;
 }
 /* enable absolute positioning */
 .inner-addon {
@@ -156,4 +154,14 @@
 }
 .right-addon input {
   padding-right: 30px;
+}
+hr {
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.number-list {
+  margin-bottom: 30px;
+}
+.number-list li:hover {
+  color: orange!important;
 }
