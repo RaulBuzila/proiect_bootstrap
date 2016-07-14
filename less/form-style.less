@@ -5,7 +5,6 @@
 }
 .container
 {
-    margin-bottom:200px;
     /* NAVBAR AND HEADER SETTING */
     @media (max-width: 991px) {
         .navbar-header {
@@ -45,10 +44,12 @@
         }
     }
     .navbar {
+        background-color: transparent;
+        border: none;
         #logo {
             .set-size(70px, 50px);
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 31px;
+            margin-bottom: 10px;
         }
         header {
             background-color: none;
@@ -63,9 +64,22 @@
             }
         }
     }
+    .input-distance{
+        margin-top: 10px;
+    }
+    .form-group{
+        margin-bottom: 30px;
+    }
+    .fa{
+        margin-top:5px;
+        color: orange;
+    }
     .btn-default{
         .set-size(109px, 35px);
+        color: white;
         background-color: orange;
     }
 }
-
+.line{
+    margin-bottom: 100px;
+}
