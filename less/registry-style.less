@@ -1,0 +1,161 @@
+.set-size(@width, @height)
+{
+  width: @width;
+  height: @height;
+}
+.container{
+  /* NAVBAR AND HEADER SETTING */
+  @media (max-width: 991px) {
+    .navbar-header {
+      float: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navbar-text {
+      float: none;
+      margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+      display: block!important;
+    }
+    .collapsing {
+      overflow: hidden!important;
+    }
+  }
+  .navbar{
+    background-color: transparent;
+    border: none;
+    #logo{
+      .set-size(70px,50px);
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    header{
+      background-color: none;
+      li{
+        margin-top: 5%;
+      }
+      img{
+        .set-size(24px, 24px);
+      }
+      a:hover{
+        color: blue;
+      }
+    }
+  }
+}
+/*****************
+ BUTTONS SETTINGS
+ *****************/
+.content{
+  .ugly-buttons{
+    height: 75px;
+    .btn-default{
+      .set-size(100%, 33px);
+      background-color: blueviolet;
+      color: white;
+    }
+  }
+  /******************
+  ORANGE LINE
+  ******************/
+  .logo{
+    margin-bottom: 1%;
+    width: 100%;
+    height: 45px;
+    background-color: blueviolet;
+    img{
+      margin-top: -5px;
+      .set-size(56px, 56px);
+    }
+    span{
+      color: white!important;
+      font-size: 16px;
+    }
+    .glyphicon{
+      margin-top:1%;
+      margin-left: 10px;
+    }
+    #search{
+      margin: 1.75% 0% 2% 0%;
+    }
+  }
+  /*****************
+  TABLE PROPERTIES
+  ****************/
+  table{
+    margin-bottom: 24px;
+    thead{
+      background-color: lightgray;
+      font-weight: bold;
+      color: black;
+    }
+    tr{
+      color: grey;
+    }
+    .arrow{
+      margin-left: 5px;
+      margin-top: 3.5px;
+    }
+  }
+  .table-hover tbody tr:hover{
+    background: whitesmoke;
+    border: 1px solid orange;
+  }
+  .table th, .table td{
+    border: none !important;
+  }
+  .table tr{
+    border-top: 1px transparent grey;
+  }
+}
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+hr{
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.number-list{
+  margin-bottom: 30px;
+}
+.number-list li:hover{
+  color: orange!important;
+}
